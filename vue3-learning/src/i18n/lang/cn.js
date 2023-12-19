@@ -20,6 +20,9 @@ const cn = {
 
     componCommunicate: '组件通信',
     comp_props: 'props通信',
+    custom_event: '自定义事件',
+
+    
 
     systemSetting: '系统设置',
     systemAuth: '系统权限',
