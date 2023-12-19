@@ -21,7 +21,7 @@ const cn = {
     componCommunicate: '组件通信',
     comp_props: 'props通信',
     custom_event: '自定义事件',
-
+    event_bus: '全局事件BUS',
     
 
     systemSetting: '系统设置',

@@ -22,6 +22,7 @@ const en = {
     componCommunicate: 'componCommunicate',
     comp_props: 'comp_props',
     custom_event: 'custom_event',
+    event_bus: 'event_bus',
 
     systemSetting: 'systemSetting',
     systemAuth: 'systemAuth',
