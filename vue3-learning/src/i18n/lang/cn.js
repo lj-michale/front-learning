@@ -23,8 +23,9 @@ const cn = {
     custom_event: '自定义事件',
     event_bus: '全局事件BUS',
     v_model: 'v_model',
+    attrs_listeners: 'attrs_listeners',
+    ref_children_parent: 'ref_children_parent',
     
-
     systemSetting: '系统设置',
     systemAuth: '系统权限',
     systemUpdateLine: '更新日志',

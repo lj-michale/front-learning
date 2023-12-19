@@ -24,6 +24,8 @@ const propsTest = () => import('@/views/communicate/01_props/PropsTest.vue')
 const eventTest = () => import('@/views/communicate/02_custom-event/EventTest.vue')
 const eventBus = () => import('@/views/communicate/03_event-bus/EventBusTest.vue')
 const vModel = () => import('@/views/communicate/04_v-model/ModelTest.vue')
+const attrsListeners = () => import('@/views/communicate/05_attrs-listeners/AttrsListenersTest.vue')
+const refChildrenParent = () => import('@/views/communicate/06_ref-children-parent/RefChildrenParentTest.vue')
 
 const SystemSetting = () => import('@/views/system/Index.vue')
 
@@ -164,6 +166,20 @@ const addRouter = [
                 iconCls: 'fa fa-life-ring', // 图标样式class
                 name: routeName.v_model,
                 component: vModel,
+                children: []
+            },
+            {
+                path: '/components/communicate/attrs-listeners',
+                iconCls: 'fa fa-life-ring', // 图标样式class
+                name: routeName.attrs_listeners,
+                component: attrsListeners,
+                children: []
+            },
+            {
+                path: '/components/communicate/ref-children-parent',
+                iconCls: 'fa fa-life-ring', // 图标样式class
+                name: routeName.ref_children_parent,
+                component: refChildrenParent,
                 children: []
             },
         ]

@@ -4,7 +4,7 @@
     <input type="text" v-model="info" />
     <hr />
     <!-- props:父亲给儿子数据 -->
-    <!-- <Child :modelValue="money" @update:modelValue="handler"></Child> -->
+    <Child :modelValue="money" @update:modelValue="handler"></Child>
     <!-- 
        v-model组件身上使用
        第一:相当有给子组件传递props[modelValue] = 10000

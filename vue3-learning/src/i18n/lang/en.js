@@ -24,6 +24,8 @@ const en = {
     custom_event: 'custom_event',
     event_bus: 'event_bus',
     v_model: 'v_model',
+    attrs_listeners: 'attrs_listeners',
+    ref_children_parent: 'ref_children_parent',
 
   
     systemSetting: 'systemSetting',
