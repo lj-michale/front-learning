@@ -23,6 +23,7 @@ const from2 = () => import('@/views/element/FromTest2.vue')
 const propsTest = () => import('@/views/communicate/01_props/PropsTest.vue')
 const eventTest = () => import('@/views/communicate/02_custom-event/EventTest.vue')
 const eventBus = () => import('@/views/communicate/03_event-bus/EventBusTest.vue')
+const vModel = () => import('@/views/communicate/04_v-model/ModelTest.vue')
 
 const SystemSetting = () => import('@/views/system/Index.vue')
 
@@ -156,6 +157,13 @@ const addRouter = [
                 iconCls: 'fa fa-life-ring', // 图标样式class
                 name: routeName.event_bus,
                 component: eventBus,
+                children: []
+            },
+            {
+                path: '/components/communicate/v-model',
+                iconCls: 'fa fa-life-ring', // 图标样式class
+                name: routeName.v_model,
+                component: vModel,
                 children: []
             },
         ]

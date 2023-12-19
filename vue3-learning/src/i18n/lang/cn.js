@@ -22,6 +22,7 @@ const cn = {
     comp_props: 'props通信',
     custom_event: '自定义事件',
     event_bus: '全局事件BUS',
+    v_model: 'v_model',
     
 
     systemSetting: '系统设置',

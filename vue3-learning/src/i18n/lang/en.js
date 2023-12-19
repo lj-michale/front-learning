@@ -23,7 +23,9 @@ const en = {
     comp_props: 'comp_props',
     custom_event: 'custom_event',
     event_bus: 'event_bus',
+    v_model: 'v_model',
 
+  
     systemSetting: 'systemSetting',
     systemAuth: 'systemAuth',
     systemUpdateLine: 'systemUpdateLine',

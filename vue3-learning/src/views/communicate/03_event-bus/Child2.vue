@@ -10,7 +10,7 @@
 import $bus from '@/bus';
 //点击按钮回调
 const handler = ()=>{
-  $bus.emit('car',{car:"法拉利"});
+  $bus.emit('car',{car:"法拉利1111111111"});
 }
 </script>
 
