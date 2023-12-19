@@ -19,6 +19,10 @@ const en = {
     elementFrom1: 'elementFrom1',
     elementFrom2: 'elementFrom2',
 
+    componCommunicate: 'componCommunicate',
+    comp_props: 'comp_props',
+    
+
     systemSetting: 'systemSetting',
     systemAuth: 'systemAuth',
     systemUpdateLine: 'systemUpdateLine',

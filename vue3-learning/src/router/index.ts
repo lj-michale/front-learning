@@ -20,6 +20,8 @@ const multiElementUi = () => import('@/views/element/MultiEchart.vue')
 const from1 = () => import('@/views/element/FromTest.vue')
 const from2 = () => import('@/views/element/FromTest2.vue')
 
+const propsTest = () => import('@/views/communicate/01_props/PropsTest.vue')
+
 const SystemSetting = () => import('@/views/system/Index.vue')
 
 const routeName = en.routeName
@@ -122,6 +124,22 @@ const addRouter = [
                 iconCls: 'fa fa-life-ring', // 图标样式class
                 name: routeName.elementFrom2,
                 component: from2,
+                children: []
+            },
+        ]
+    },
+    /* 组件通信 */
+    {
+        path: '/',
+        iconCls: 'fa fa-paw', // 图标样式class
+        name: routeName.componCommunicate,
+        component: Layout,
+        children: [
+            {
+                path: '/components/communicate/props',
+                iconCls: 'fa fa-life-ring', // 图标样式class
+                name: routeName.comp_props,
+                component: propsTest,
                 children: []
             },
         ]

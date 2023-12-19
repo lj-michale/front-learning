@@ -18,6 +18,9 @@ const cn = {
     elementFrom1: '表单1',
     elementFrom2: '表单2',
 
+    componCommunicate: '组件通信',
+    comp_props: 'props通信',
+
     systemSetting: '系统设置',
     systemAuth: '系统权限',
     systemUpdateLine: '更新日志',
