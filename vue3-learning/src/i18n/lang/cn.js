@@ -25,6 +25,7 @@ const cn = {
     v_model: 'v_model',
     attrs_listeners: 'attrs_listeners',
     ref_children_parent: 'ref_children_parent',
+    provide_inject: 'provide_inject',
     
     systemSetting: '系统设置',
     systemAuth: '系统权限',

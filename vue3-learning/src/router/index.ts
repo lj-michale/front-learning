@@ -26,6 +26,9 @@ const eventBus = () => import('@/views/communicate/03_event-bus/EventBusTest.vue
 const vModel = () => import('@/views/communicate/04_v-model/ModelTest.vue')
 const attrsListeners = () => import('@/views/communicate/05_attrs-listeners/AttrsListenersTest.vue')
 const refChildrenParent = () => import('@/views/communicate/06_ref-children-parent/RefChildrenParentTest.vue')
+const provideInject = () => import('@/views/communicate/07_provide-inject/ProvideInjectTest.vue')
+const pinia = () => import('@/views/communicate/08_pinia/index.vue')
+const slot = () => import('@/views/communicate/09_slot/SlotTest.vue')
 
 const SystemSetting = () => import('@/views/system/Index.vue')
 
@@ -180,6 +183,27 @@ const addRouter = [
                 iconCls: 'fa fa-life-ring', // 图标样式class
                 name: routeName.ref_children_parent,
                 component: refChildrenParent,
+                children: []
+            },
+            {
+                path: '/components/communicate/provide-inject',
+                iconCls: 'fa fa-life-ring', // 图标样式class
+                name: routeName.provide_inject,
+                component: provideInject,
+                children: []
+            },
+            {
+                path: '/components/communicate/pinia',
+                iconCls: 'fa fa-life-ring', // 图标样式class
+                name: routeName.pinia,
+                component: pinia,
+                children: []
+            },
+            {
+                path: '/components/communicate/slot',
+                iconCls: 'fa fa-life-ring', // 图标样式class
+                name: routeName.slot,
+                component: slot,
                 children: []
             },
         ]

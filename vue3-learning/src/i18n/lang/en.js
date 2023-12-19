@@ -26,8 +26,10 @@ const en = {
     v_model: 'v_model',
     attrs_listeners: 'attrs_listeners',
     ref_children_parent: 'ref_children_parent',
-
-  
+    provide_inject: 'provide_inject',
+    pinia: 'pinia',
+    slot: 'slot',
+    
     systemSetting: 'systemSetting',
     systemAuth: 'systemAuth',
     systemUpdateLine: 'systemUpdateLine',
