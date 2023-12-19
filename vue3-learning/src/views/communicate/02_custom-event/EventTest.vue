@@ -36,7 +36,7 @@ const handler1 = (a,b,c,$event)=>{
 }
 //事件回调---3
 const handler2 = ()=>{
-    console.log(123);
+    console.log(12333333);
 }
 //事件回调---4
 const handler3 = (param1,param2)=>{
