@@ -28,7 +28,10 @@ const cn = {
     provide_inject: 'provide_inject',
     pinia: 'pinia',
     slot: 'slot',
-    
+
+    vueSkill:'vue知识',
+    vueAttribute:'属性',
+
     systemSetting: '系统设置',
     systemAuth: '系统权限',
     systemUpdateLine: '更新日志',

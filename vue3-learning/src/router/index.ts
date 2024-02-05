@@ -12,7 +12,7 @@ import Login from '@/views/login/index'
 import Layout from '@/views/layout/index'
 import Home from '@/views/home/Index'
 
-/** 不是必须加载的组件使用懒加载 */ 
+/** 不是必须加载的组件使用懒加载 */
 const NotFound = () => import('@/views/page404.vue')
 const dataAsset = () => import('@/views/data/asset/index.vue')
 const multiEchart = () => import('@/views/data/echart/MultiEchart.vue')
@@ -29,6 +29,8 @@ const refChildrenParent = () => import('@/views/communicate/06_ref-children-pare
 const provideInject = () => import('@/views/communicate/07_provide-inject/ProvideInjectTest.vue')
 const pinia = () => import('@/views/communicate/08_pinia/index.vue')
 const slot = () => import('@/views/communicate/09_slot/SlotTest.vue')
+
+const VueAttributes = () => import('@/views/skill/VueAttributes.vue')
 
 const SystemSetting = () => import('@/views/system/Index.vue')
 
@@ -208,6 +210,23 @@ const addRouter = [
             },
         ]
     },
+    /* vue3知识点学 */
+    {
+        path: '/',
+        iconCls: 'fa fa-paw', // 图标样式class
+        name: routeName.vueSkill,
+        component: Layout,
+        children: [
+            {
+                path: '/vue3/skill/attribute',
+                iconCls: 'fa fa-life-ring', // 图标样式class
+                name: routeName.vueAttribute,
+                component: VueAttributes,
+                children: []
+            },
+        ]
+    },
+
     /*系统设置*/
     {
         path: '/',

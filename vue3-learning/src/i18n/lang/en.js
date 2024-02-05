@@ -29,11 +29,13 @@ const en = {
     provide_inject: 'provide_inject',
     pinia: 'pinia',
     slot: 'slot',
-    
+
+    vueSkill:'vueSkill',
+    vueAttribute:'vueAttribute',
+
     systemSetting: 'systemSetting',
     systemAuth: 'systemAuth',
     systemUpdateLine: 'systemUpdateLine',
-
   },
   rightMenu: {
     close: 'close',
