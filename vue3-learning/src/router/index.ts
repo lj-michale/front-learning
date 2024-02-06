@@ -31,6 +31,8 @@ const pinia = () => import('@/views/communicate/08_pinia/index.vue')
 const slot = () => import('@/views/communicate/09_slot/SlotTest.vue')
 
 const VueAttributes = () => import('@/views/skill/VueAttributes.vue')
+const OptionApi = () => import('@/views/skill/OptionApi.vue')
+const CompositionApi = () => import('@/views/skill/CompositionAPI.vue')
 
 const SystemSetting = () => import('@/views/system/Index.vue')
 
@@ -222,6 +224,20 @@ const addRouter = [
                 iconCls: 'fa fa-life-ring', // 图标样式class
                 name: routeName.vueAttribute,
                 component: VueAttributes,
+                children: []
+            },
+            {
+                path: '/vue3/skill/option-api',
+                iconCls: 'fa fa-life-ring', // 图标样式class
+                name: routeName.optionApi,
+                component: OptionApi,
+                children: []
+            },
+            {
+                path: '/vue3/skill/composition-api',
+                iconCls: 'fa fa-life-ring', // 图标样式class
+                name: routeName.compositionApi,
+                component: CompositionApi,
                 children: []
             },
         ]

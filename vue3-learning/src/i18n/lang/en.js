@@ -32,6 +32,8 @@ const en = {
 
     vueSkill:'vueSkill',
     vueAttribute:'vueAttribute',
+    optionApi:'optionApi',
+    compositionApi:'compositionApi',
 
     systemSetting: 'systemSetting',
     systemAuth: 'systemAuth',

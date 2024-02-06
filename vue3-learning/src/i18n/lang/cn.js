@@ -31,6 +31,8 @@ const cn = {
 
     vueSkill:'vue知识',
     vueAttribute:'属性',
+    optionApi:'选项式API',
+    compositionApi:'组合式API',
 
     systemSetting: '系统设置',
     systemAuth: '系统权限',
