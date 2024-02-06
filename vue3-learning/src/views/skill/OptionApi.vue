@@ -37,6 +37,9 @@
       </li>
     </ul>
     <p align="right">总价：{{sumPrice}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button"  @click="save" >提交订单</button></p>
+    <div id="app3">
+      <button @click="sum2++">增加数值</button>
+    </div>
   </div>
 
 </template>
@@ -71,6 +74,8 @@ export default{
           nums: 3,
         },
       ],
+      sum2: 1,
+
     }
   },
   computed:{
@@ -140,7 +145,11 @@ export default{
   watch:{
     sum:(newVal,oldVal)=>{
       this.sumChanged(newVal);
-    }
+    },
+    // New: 新值 | Old: 老值
+    sum2(New, Old) {
+      console.log(`新值:${New} ——— 老值:${Old}`)
+    },
   },
   created(){
 

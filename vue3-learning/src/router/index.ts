@@ -33,6 +33,7 @@ const slot = () => import('@/views/communicate/09_slot/SlotTest.vue')
 const VueAttributes = () => import('@/views/skill/VueAttributes.vue')
 const OptionApi = () => import('@/views/skill/OptionApi.vue')
 const CompositionApi = () => import('@/views/skill/CompositionAPI.vue')
+const WatchApi = () => import('@/views/skill/Watch.vue')
 
 const SystemSetting = () => import('@/views/system/Index.vue')
 
@@ -238,6 +239,13 @@ const addRouter = [
                 iconCls: 'fa fa-life-ring', // 图标样式class
                 name: routeName.compositionApi,
                 component: CompositionApi,
+                children: []
+            },
+            {
+                path: '/vue3/skill/watch',
+                iconCls: 'fa fa-life-ring', // 图标样式class
+                name: routeName.watchApi,
+                component: WatchApi,
                 children: []
             },
         ]

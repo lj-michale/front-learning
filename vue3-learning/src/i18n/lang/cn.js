@@ -33,6 +33,7 @@ const cn = {
     vueAttribute:'属性',
     optionApi:'选项式API',
     compositionApi:'组合式API',
+    watchApi:'监听器API',
 
     systemSetting: '系统设置',
     systemAuth: '系统权限',

@@ -34,6 +34,7 @@ const en = {
     vueAttribute:'vueAttribute',
     optionApi:'optionApi',
     compositionApi:'compositionApi',
+    watchApi:'watchApi',
 
     systemSetting: 'systemSetting',
     systemAuth: 'systemAuth',
