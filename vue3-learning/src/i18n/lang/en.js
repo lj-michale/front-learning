@@ -35,6 +35,7 @@ const en = {
     optionApi:'optionApi',
     compositionApi:'compositionApi',
     watchApi:'watchApi',
+    methodApi:'methodApi',
 
     systemSetting: 'systemSetting',
     systemAuth: 'systemAuth',
