@@ -29,7 +29,7 @@ const cn = {
     pinia: 'pinia',
     slot: 'slot',
 
-    vueSkill:'vue知识',
+    vueSkill:'Vue知识',
     vueAttribute:'属性',
     optionApi:'选项式API',
     compositionApi:'组合式API',

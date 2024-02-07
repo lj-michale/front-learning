@@ -14,6 +14,12 @@
       <h1>值：{{ sum.car.config.isChina }}</h1>
       <button @click="sum.car.config.isChina = !sum.car.config.isChina">改变数据</button>
     </div>-->
+    <div id="div3">
+      <!-- 绑定属性 -->
+      <a v-bind:href="path" style="display: block;">犬小哈教程</a>
+      <!-- v-bind 指令简写模式 -->
+      <a :href="path" style="display: block;">犬小哈教程</a>
+    </div>
   </div>
 </template>
 
@@ -46,6 +52,9 @@ const sum2 = reactive({
     }
   }
 })
+
+// 定义一个 path 响应式变量，用于绑定 href 属性
+const path = ref('https://www.quanxiaoha.com')
 
 setTimeout(()=>{
   count0.value = 200;

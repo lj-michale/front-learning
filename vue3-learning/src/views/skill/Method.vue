@@ -26,6 +26,10 @@
       <!-- 简写：<Hello :data="data" @update="data = $event" /> -->
       <Hello :data="data" @update="changeData" />
     </div>
+<!--    <div id="div6">-->
+<!--      <h1>{{ data }}</h1>-->
+<!--      <button @click="emit('update', '你好, 世界!')">修改父组件的数据</button>-->
+<!--    </div>-->
   </div>
 </template>
 
@@ -74,6 +78,9 @@ const data = ref("Hello World")
 const changeData = (value: string) => {
   data.value = value
 }
+// const props = defineProps<{ data: string }>()
+// const emit = defineEmits<(e: "update", value: string) => void>()
+
 watch(time,(newvalue)=>{
   if(newvalue<=0){
     clearInterval(timer)
