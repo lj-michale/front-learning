@@ -33,6 +33,10 @@
     <div id="div6">
       <button @click="sayHello">点击我</button>
     </div>
+    <div id="div7">
+      <p :class="{ 'active': true, 'text-danger':hasError}">Class样式绑定1</p>
+      <p :class="classArr">Class样式绑定2</p>
+    </div>
   </div>
 </template>
 
@@ -88,6 +92,10 @@ const sayHello = () => {
   // 弹出 alert 弹框
   alert('Hello, 犬小哈教程')
 }
+
+const classArr = { 'active': true, "text-danger":true}
+const isActive = true
+const hasError = true
 
 watch(time,(newvalue)=>{
   if(newvalue<=0){
