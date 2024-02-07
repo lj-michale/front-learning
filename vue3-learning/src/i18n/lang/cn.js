@@ -35,6 +35,7 @@ const cn = {
     compositionApi:'组合式API',
     watchApi:'监听器API',
     methodApi:'事件处理API',
+    compNestApi:'组件嵌套',
 
     systemSetting: '系统设置',
     systemAuth: '系统权限',

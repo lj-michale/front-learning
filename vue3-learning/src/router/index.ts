@@ -35,6 +35,7 @@ const OptionApi = () => import('@/views/skill/OptionApi.vue')
 const CompositionApi = () => import('@/views/skill/CompositionAPI.vue')
 const WatchApi = () => import('@/views/skill/Watch.vue')
 const MethodApi = () => import('@/views/skill/Method.vue')
+const ComponentNestRoot = () => import('@/views/skill/ComponentNestRoot.vue')
 
 const SystemSetting = () => import('@/views/system/Index.vue')
 
@@ -254,6 +255,13 @@ const addRouter = [
                 iconCls: 'fa fa-life-ring', // 图标样式class
                 name: routeName.methodApi,
                 component: MethodApi,
+                children: []
+            },
+            {
+                path: '/vue3/skill/comp-nest',
+                iconCls: 'fa fa-life-ring', // 图标样式class
+                name: routeName.compNestApi,
+                component: ComponentNestRoot,
                 children: []
             },
         ]
