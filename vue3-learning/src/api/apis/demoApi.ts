@@ -11,3 +11,11 @@ export function getUpdateTimeLine() {
         method: 'get',
     })
 }
+
+// 获取mock测试数据
+export function getMockDataInfos() {
+    return axios({
+        url: `/api/turing/mock/test-datas`,
+        method: 'get',
+    })
+}

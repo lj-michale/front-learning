@@ -36,6 +36,7 @@ const cn = {
     watchApi:'监听器API',
     methodApi:'事件处理API',
     compNestApi:'组件嵌套',
+    dataMock:'数据Mock',
 
     systemSetting: '系统设置',
     systemAuth: '系统权限',

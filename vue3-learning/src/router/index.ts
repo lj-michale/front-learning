@@ -36,6 +36,7 @@ const CompositionApi = () => import('@/views/skill/CompositionAPI.vue')
 const WatchApi = () => import('@/views/skill/Watch.vue')
 const MethodApi = () => import('@/views/skill/Method.vue')
 const ComponentNestRoot = () => import('@/views/skill/ComponentNestRoot.vue')
+const DataMock = () => import('@/views/skill/DataMock.vue')
 
 const SystemSetting = () => import('@/views/system/Index.vue')
 
@@ -262,6 +263,13 @@ const addRouter = [
                 iconCls: 'fa fa-life-ring', // 图标样式class
                 name: routeName.compNestApi,
                 component: ComponentNestRoot,
+                children: []
+            },
+            {
+                path: '/vue3/skill/mock-data',
+                iconCls: 'fa fa-life-ring', // 图标样式class
+                name: routeName.dataMock,
+                component: DataMock,
                 children: []
             },
         ]

@@ -37,6 +37,7 @@ const en = {
     watchApi:'watchApi',
     methodApi:'methodApi',
     compNestApi:'compNestApi',
+    dataMock:'dataMock',
 
     systemSetting: 'systemSetting',
     systemAuth: 'systemAuth',

@@ -1,5 +1,5 @@
 // Interface data format used to return a unified format
-import { ResultEnum } from '@/enums/httpEnum';
+import { ResultEnum } from '../src/enums/httpEnum';
 import {Recordable} from "vite-plugin-mock";
 
 export function resultSuccess<T = Recordable>(result: T, { message = 'ok' } = {}) {
