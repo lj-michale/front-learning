@@ -20,6 +20,16 @@
       <!-- v-bind 指令简写模式 -->
       <a :href="path" style="display: block;">犬小哈教程</a>
     </div>
+    <div id="div4">
+      <!-- 通过 v-if 指令判断 isShow 是否为 true, 若是则渲染 <a> 标签，否则不渲染 -->
+      <a href="https://www.quanxiaoha.com" v-if="isShow">犬小哈教程</a>
+    </div>
+    <div id="div5">
+      <!-- 通过 v-if 指令判断 isShow 是否为 true, 若是则渲染 <a> 标签 -->
+      <a href="https://www.quanxiaoha.com" v-if="isShow2">犬小哈教程</a>
+      <!-- 否则渲染下面标签的内容 -->
+      <div v-else>www.quanxiaoha.com</div>
+    </div>
   </div>
 </template>
 
@@ -55,6 +65,9 @@ const sum2 = reactive({
 
 // 定义一个 path 响应式变量，用于绑定 href 属性
 const path = ref('https://www.quanxiaoha.com')
+// 设置 isShow 变量为 true
+const isShow = ref(true)
+const isShow2 = ref(false)
 
 setTimeout(()=>{
   count0.value = 200;
