@@ -20,6 +20,12 @@
       <input v-model="msgs" />
       <h5>{{msgs}}</h5>
     </div>
+    <div id="div5">
+      <h1>{{ data }}</h1>
+      <button @click="data = 'Hello Vue3'">修改子组件的数据</button>
+      <!-- 简写：<Hello :data="data" @update="data = $event" /> -->
+      <Hello :data="data" @update="changeData" />
+    </div>
   </div>
 </template>
 
@@ -63,6 +69,11 @@ let time = ref(10)
 let timer = setInterval(()=>{
   time.value--
 },1000)
+const data = ref("Hello World")
+// 通过调用该事件完成修改数据的操作
+const changeData = (value: string) => {
+  data.value = value
+}
 watch(time,(newvalue)=>{
   if(newvalue<=0){
     clearInterval(timer)
