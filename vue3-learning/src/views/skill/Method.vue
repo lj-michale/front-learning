@@ -16,6 +16,10 @@
     <div id="div3">
       <h2>倒计时：{{time}}</h2>
     </div>
+    <div id="div4">
+      <input v-model="msgs" />
+      <h5>{{msgs}}</h5>
+    </div>
   </div>
 </template>
 
@@ -38,7 +42,7 @@ let fn2 = () => {
 let fn3 = () => {
   arr.value = [6,7,8,9,10]
 }
-
+const msgs = "小乔"
 const count = ref(0)
 //假数据
 let arr3=["酸菜鱼","鱼香肉丝","麻婆豆腐","青椒肉丝","宫保鸡丁","璧山兔","来凤鱼"]
