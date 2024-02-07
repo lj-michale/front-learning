@@ -30,6 +30,9 @@
 <!--      <h1>{{ data }}</h1>-->
 <!--      <button @click="emit('update', '你好, 世界!')">修改父组件的数据</button>-->
 <!--    </div>-->
+    <div id="div6">
+      <button @click="sayHello">点击我</button>
+    </div>
   </div>
 </template>
 
@@ -80,6 +83,11 @@ const changeData = (value: string) => {
 }
 // const props = defineProps<{ data: string }>()
 // const emit = defineEmits<(e: "update", value: string) => void>()
+// 点击事件
+const sayHello = () => {
+  // 弹出 alert 弹框
+  alert('Hello, 犬小哈教程')
+}
 
 watch(time,(newvalue)=>{
   if(newvalue<=0){
