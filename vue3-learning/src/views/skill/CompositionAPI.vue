@@ -30,6 +30,19 @@
       <!-- 否则渲染下面标签的内容 -->
       <div v-else>www.quanxiaoha.com</div>
     </div>
+    <div id="div6">
+      <h1>犬小哈教程列表</h1>
+      <table border="1" width="600px">
+        <tr>
+          <td>序号</td>
+          <td>名称</td>
+        </tr>
+        <tr v-for="(tutorial, index) in tutorials" :key="index">
+          <td>{{ index + 1 }}</td>
+          <td>{{ tutorial }}</td>
+        </tr>
+      </table>
+    </div>
   </div>
 </template>
 
@@ -68,6 +81,8 @@ const path = ref('https://www.quanxiaoha.com')
 // 设置 isShow 变量为 true
 const isShow = ref(true)
 const isShow2 = ref(false)
+// 定义一个教程列表数组
+const tutorials = ref(['Vue 3 教程', 'IDEA 使用教程', 'Docker 教程'])
 
 setTimeout(()=>{
   count0.value = 200;
