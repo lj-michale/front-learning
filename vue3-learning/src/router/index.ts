@@ -37,6 +37,7 @@ const WatchApi = () => import('@/views/skill/Watch.vue')
 const MethodApi = () => import('@/views/skill/Method.vue')
 const ComponentNestRoot = () => import('@/views/skill/ComponentNestRoot.vue')
 const DataMock = () => import('@/views/skill/DataMock.vue')
+const HeroMock = () => import('@/views/skill/HeroMockData.vue')
 
 const SystemSetting = () => import('@/views/system/Index.vue')
 
@@ -270,6 +271,13 @@ const addRouter = [
                 iconCls: 'fa fa-life-ring', // 图标样式class
                 name: routeName.dataMock,
                 component: DataMock,
+                children: []
+            },
+            {
+                path: '/vue3/skill/mock-hero',
+                iconCls: 'fa fa-life-ring', // 图标样式class
+                name: routeName.mockHero,
+                component: HeroMock,
                 children: []
             },
         ]

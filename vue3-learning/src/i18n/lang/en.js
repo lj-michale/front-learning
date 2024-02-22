@@ -38,6 +38,7 @@ const en = {
     methodApi:'methodApi',
     compNestApi:'compNestApi',
     dataMock:'dataMock',
+    mockHero:'mockHero',
 
     systemSetting: 'systemSetting',
     systemAuth: 'systemAuth',

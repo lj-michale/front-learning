@@ -19,4 +19,3 @@ export function getMockDataInfos() {
         method: 'get',
     })
 }
-
