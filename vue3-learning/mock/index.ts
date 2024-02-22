@@ -40,6 +40,17 @@ function createUserList() {
   ];
 }
 
+// 商品信息
+function productInfoList() {
+  return [
+    {
+      id: "CTG-218DHAGG2212",
+      productName: "Apple",
+      price: 6.78,
+      area: "中国宁夏"
+    },
+  ]
+}
 
 export default [
   // 用户登录接口
