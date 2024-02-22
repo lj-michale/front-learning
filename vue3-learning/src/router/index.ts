@@ -38,6 +38,7 @@ const MethodApi = () => import('@/views/skill/Method.vue')
 const ComponentNestRoot = () => import('@/views/skill/ComponentNestRoot.vue')
 const DataMock = () => import('@/views/skill/DataMock.vue')
 const HeroMock = () => import('@/views/skill/HeroMockData.vue')
+const TablePage = () => import('@/views/skill/TablePages.vue')
 
 const SystemSetting = () => import('@/views/system/Index.vue')
 
@@ -278,6 +279,13 @@ const addRouter = [
                 iconCls: 'fa fa-life-ring', // 图标样式class
                 name: routeName.mockHero,
                 component: HeroMock,
+                children: []
+            },
+            {
+                path: '/vue3/skill/table-page',
+                iconCls: 'fa fa-life-ring', // 图标样式class
+                name: routeName.tablePages,
+                component: TablePage,
                 children: []
             },
         ]

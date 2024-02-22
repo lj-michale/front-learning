@@ -39,6 +39,8 @@ const cn = {
     dataMock:'数据Mock',
     mockHero:'Mock-Hero',
 
+    tablePages:'table分页',
+
     systemSetting: '系统设置',
     systemAuth: '系统权限',
     systemUpdateLine: '更新日志',

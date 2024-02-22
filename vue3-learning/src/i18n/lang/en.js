@@ -40,6 +40,8 @@ const en = {
     dataMock:'dataMock',
     mockHero:'mockHero',
 
+    tablePages:'tablePages',
+
     systemSetting: 'systemSetting',
     systemAuth: 'systemAuth',
     systemUpdateLine: 'systemUpdateLine',

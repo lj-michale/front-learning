@@ -42,7 +42,7 @@
 
 <script setup lang="ts">
 import {ref,computed, watch, onMounted,reactive} from 'vue';
-import { getMockDataInfos, getMockHeroList } from "@/api/apis/mockapi.ts";
+import { getMockHeroList } from "@/api/apis/mockapi.ts";
 
 const tableHeaderData = [
   {
