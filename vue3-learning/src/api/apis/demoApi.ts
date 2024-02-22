@@ -15,7 +15,8 @@ export function getUpdateTimeLine() {
 // 获取mock测试数据
 export function getMockDataInfos() {
     return axios({
-        url: `/api/turing/mock/test-datas`,
+        url: `/api/turing/user/info`,
         method: 'get',
     })
 }
+
