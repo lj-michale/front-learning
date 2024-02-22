@@ -44,6 +44,33 @@
 import {ref,computed, watch, onMounted,reactive} from 'vue';
 import { getMockDataInfos, getMockHeroList } from "@/api/apis/mockapi.ts";
 
+const tableHeaderData = [
+  {
+    label: '大标题',
+    props: 'title'
+  },
+  {
+    label: '小标题',
+    props: 'skin_name'
+  },
+  {
+    label: 'URL地址',
+    props: 'infourl'
+  },
+  {
+    label: '状态',
+    props: 'occupation'
+  },
+  {
+    label: '类型',
+    props: 'hero_type'
+  }
+]
+
+const total = ref(0);
+const currentPages = ref(1)
+const pageSizes = ref(10)
+
 const heroInfoList = reactive([])
 
 async function fetchMockDataInfos() {
