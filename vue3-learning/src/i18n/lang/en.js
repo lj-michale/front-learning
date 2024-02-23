@@ -41,6 +41,7 @@ const en = {
     mockHero:'mockHero',
 
     tablePages:'tablePages',
+    fileUpLoad:'fileUpLoad',
 
     systemSetting: 'systemSetting',
     systemAuth: 'systemAuth',

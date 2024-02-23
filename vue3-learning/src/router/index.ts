@@ -39,6 +39,7 @@ const ComponentNestRoot = () => import('@/views/skill/ComponentNestRoot.vue')
 const DataMock = () => import('@/views/skill/DataMock.vue')
 const HeroMock = () => import('@/views/skill/HeroMockData.vue')
 const TablePage = () => import('@/views/skill/TablePages.vue')
+const FileUpLoad = () => import('@/views/element/FileUpLoad.vue')
 
 const SystemSetting = () => import('@/views/system/Index.vue')
 
@@ -286,6 +287,23 @@ const addRouter = [
                 iconCls: 'fa fa-life-ring', // 图标样式class
                 name: routeName.tablePages,
                 component: TablePage,
+                children: []
+            },
+        ]
+    },
+
+    /*文件上传*/
+    {
+        path: '/',
+        iconCls: 'fa fa-paw', // 图标样式class
+        name: routeName.fileUpLoad,
+        component: Layout,
+        children: [
+            {
+                path: '/vue3/skill/file-up-load',
+                iconCls: 'fa fa-life-ring', // 图标样式class
+                name: routeName.fileUpLoad,
+                component: FileUpLoad,
                 children: []
             },
         ]

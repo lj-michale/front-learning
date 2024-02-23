@@ -40,6 +40,7 @@ const cn = {
     mockHero:'Mock-Hero',
 
     tablePages:'table分页',
+    fileUpLoad:'文件上传',
 
     systemSetting: '系统设置',
     systemAuth: '系统权限',
