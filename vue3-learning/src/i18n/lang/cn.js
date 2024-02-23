@@ -40,6 +40,7 @@ const cn = {
     dataMock:'数据Mock',
     mockHero:'Mock-Hero',
     guide:'引导页',
+    divLayout:'div布局',
 
     tablePages:'table分页',
     fileUpLoad:'文件上传',

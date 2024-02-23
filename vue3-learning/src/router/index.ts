@@ -45,6 +45,7 @@ const Guide = () => import('@/views/skill/guide/Guide.vue')
 const FromInfo = () => import('@/views/from/fromInfo.vue')
 const StepFrom = () => import('@/views/from/stepFrom.vue')
 const AdvanceForm = () => import('@/views/from/advanceForm.vue')
+const DivLayout = () => import('@/views/skill/DivLayout.vue')
 
 const SystemSetting = () => import('@/views/system/Index.vue')
 
@@ -306,6 +307,13 @@ const addRouter = [
                 iconCls: 'fa fa-life-ring', // 图标样式class
                 name: routeName.guide,
                 component: Guide,
+                children: []
+            },
+            {
+                path: '/vue3/skill/di-layout',
+                iconCls: 'fa fa-life-ring', // 图标样式class
+                name: routeName.divLayout,
+                component: DivLayout,
                 children: []
             },
         ]

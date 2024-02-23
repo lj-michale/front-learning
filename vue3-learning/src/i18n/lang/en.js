@@ -41,6 +41,7 @@ const en = {
     dataMock:'dataMock',
     mockHero:'mockHero',
     guide:'guide',
+    divLayout:'divLayout',
 
     tablePages:'tablePages',
     fileUpLoad:'fileUpLoad',
