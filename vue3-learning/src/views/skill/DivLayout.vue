@@ -1,7 +1,6 @@
 <template>
-  <div class="wrap">
-    <div class="content"></div>
-  </div>
+  <div class="l">定宽</div>
+  <div class="r">自适应</div>
 </template>
 
 <script setup lang="ts">
@@ -9,17 +8,17 @@
 </script>
 
 <style scoped>
-.wrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 1200px;
-  height: 800px;
+.l, .r {
+  height: 600px;
+}
+.l {
+  width: 400px;
   background-color: aqua;
+  float: left;
 }
-.content {
-  width: 200px;
-  height: 200px;
+.r {
   background-color: blueviolet;
+  margin-left: 400px;
 }
+
 </style>
