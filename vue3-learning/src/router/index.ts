@@ -41,6 +41,8 @@ const HeroMock = () => import('@/views/skill/HeroMockData.vue')
 const TablePage = () => import('@/views/skill/TablePages.vue')
 const FileUpLoad = () => import('@/views/element/FileUpLoad.vue')
 const Guide = () => import('@/views/skill/guide/Guide.vue')
+const FromInfo = () => import('@/views/from/fromInfo.vue')
+const StepFrom = () => import('@/views/from/stepFrom.vue')
 
 const SystemSetting = () => import('@/views/system/Index.vue')
 
@@ -312,6 +314,30 @@ const addRouter = [
                 iconCls: 'fa fa-life-ring', // 图标样式class
                 name: routeName.fileUpLoad,
                 component: FileUpLoad,
+                children: []
+            },
+        ]
+    },
+
+    /*表单*/
+    {
+        path: '/',
+        iconCls: 'fa fa-paw', // 图标样式class
+        name: routeName.from,
+        component: Layout,
+        children: [
+            {
+                path: '/vue3/skill/basic-from',
+                iconCls: 'fa fa-life-ring', // 图标样式class
+                name: routeName.basicFrom,
+                component: FromInfo,
+                children: []
+            },
+            {
+                path: '/vue3/skill/step-from',
+                iconCls: 'fa fa-life-ring', // 图标样式class
+                name: routeName.stepForm,
+                component: StepFrom,
                 children: []
             },
         ]

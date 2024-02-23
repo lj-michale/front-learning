@@ -44,6 +44,10 @@ const en = {
     tablePages:'tablePages',
     fileUpLoad:'fileUpLoad',
 
+    from:'from',
+    basicFrom:'basicFrom',
+    stepForm:'stepForm',
+
     systemSetting: 'systemSetting',
     systemAuth: 'systemAuth',
     systemUpdateLine: 'systemUpdateLine',

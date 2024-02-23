@@ -43,6 +43,9 @@ const cn = {
     tablePages:'table分页',
     fileUpLoad:'文件上传',
 
+    from:'表单',
+    basicFrom:'基础表单',
+    stepForm:'分步表单',
 
     systemSetting: '系统设置',
     systemAuth: '系统权限',
