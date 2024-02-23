@@ -40,6 +40,7 @@ const DataMock = () => import('@/views/skill/DataMock.vue')
 const HeroMock = () => import('@/views/skill/HeroMockData.vue')
 const TablePage = () => import('@/views/skill/TablePages.vue')
 const FileUpLoad = () => import('@/views/element/FileUpLoad.vue')
+const Guide = () => import('@/views/skill/guide/Guide.vue')
 
 const SystemSetting = () => import('@/views/system/Index.vue')
 
@@ -287,6 +288,13 @@ const addRouter = [
                 iconCls: 'fa fa-life-ring', // 图标样式class
                 name: routeName.tablePages,
                 component: TablePage,
+                children: []
+            },
+            {
+                path: '/vue3/skill/guide',
+                iconCls: 'fa fa-life-ring', // 图标样式class
+                name: routeName.guide,
+                component: Guide,
                 children: []
             },
         ]

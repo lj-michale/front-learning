@@ -38,9 +38,11 @@ const cn = {
     compNestApi:'组件嵌套',
     dataMock:'数据Mock',
     mockHero:'Mock-Hero',
+    guide:'引导页',
 
     tablePages:'table分页',
     fileUpLoad:'文件上传',
+
 
     systemSetting: '系统设置',
     systemAuth: '系统权限',

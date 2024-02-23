@@ -39,6 +39,7 @@ const en = {
     compNestApi:'compNestApi',
     dataMock:'dataMock',
     mockHero:'mockHero',
+    guide:'guide',
 
     tablePages:'tablePages',
     fileUpLoad:'fileUpLoad',
