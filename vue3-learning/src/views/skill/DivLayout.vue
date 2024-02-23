@@ -11,14 +11,15 @@
 <style scoped>
 .wrap {
   position: relative;
-  width: 100%;
-  height: 200px;
+  width: 1200px;
+  height: 800px;
   background-color: aqua;
 }
 .content {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  top: 50%;
+  transform: translate(-50%, -50%);
   width: 200px;
   height: 200px;
   background-color: blueviolet;
