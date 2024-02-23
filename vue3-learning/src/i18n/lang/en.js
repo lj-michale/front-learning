@@ -16,6 +16,7 @@ const en = {
 
     elementUi: 'elementUi',
     elementBasic: 'elementBasic',
+    elementComponent: 'elementComponent',
     elementFrom1: 'elementFrom1',
     elementFrom2: 'elementFrom2',
 

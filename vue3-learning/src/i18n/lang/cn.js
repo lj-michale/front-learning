@@ -15,6 +15,7 @@ const cn = {
 
     elementUi: 'ElementUI',
     elementBasic: 'Basic基础组件',
+    elementComponent: 'Element组件',
     elementFrom1: '表单1',
     elementFrom2: '表单2',
 

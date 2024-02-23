@@ -17,6 +17,7 @@ const NotFound = () => import('@/views/page404.vue')
 const dataAsset = () => import('@/views/data/asset/index.vue')
 const multiEchart = () => import('@/views/data/echart/MultiEchart.vue')
 const multiElementUi = () => import('@/views/element/MultiEchart.vue')
+const ElementComponent = () => import('@/views/element/ElementComponent.vue')
 const from1 = () => import('@/views/element/FromTest.vue')
 const from2 = () => import('@/views/element/FromTest2.vue')
 
@@ -133,6 +134,13 @@ const addRouter = [
                 iconCls: 'fa fa-life-ring', // 图标样式class
                 name: routeName.elementBasic,
                 component: multiElementUi,
+                children: []
+            },
+            {
+                path: '/element-ui/element-component',
+                iconCls: 'fa fa-life-ring', // 图标样式class
+                name: routeName.elementComponent,
+                component: ElementComponent,
                 children: []
             },
             {
