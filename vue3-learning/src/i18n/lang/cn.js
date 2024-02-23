@@ -46,6 +46,7 @@ const cn = {
     from:'表单',
     basicFrom:'基础表单',
     stepForm:'分步表单',
+    advanceForm:'高级表单',
 
     systemSetting: '系统设置',
     systemAuth: '系统权限',

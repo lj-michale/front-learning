@@ -47,6 +47,7 @@ const en = {
     from:'from',
     basicFrom:'basicFrom',
     stepForm:'stepForm',
+    advanceForm:'advanceForm',
 
     systemSetting: 'systemSetting',
     systemAuth: 'systemAuth',

@@ -43,6 +43,7 @@ const FileUpLoad = () => import('@/views/element/FileUpLoad.vue')
 const Guide = () => import('@/views/skill/guide/Guide.vue')
 const FromInfo = () => import('@/views/from/fromInfo.vue')
 const StepFrom = () => import('@/views/from/stepFrom.vue')
+const AdvanceForm = () => import('@/views/from/advanceForm.vue')
 
 const SystemSetting = () => import('@/views/system/Index.vue')
 
@@ -338,6 +339,13 @@ const addRouter = [
                 iconCls: 'fa fa-life-ring', // 图标样式class
                 name: routeName.stepForm,
                 component: StepFrom,
+                children: []
+            },
+            {
+                path: '/vue3/skill/advance-from',
+                iconCls: 'fa fa-life-ring', // 图标样式class
+                name: routeName.advanceForm,
+                component: AdvanceForm,
                 children: []
             },
         ]
