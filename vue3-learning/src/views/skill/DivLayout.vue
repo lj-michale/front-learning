@@ -10,15 +10,17 @@
 
 <style scoped>
 .wrap {
+  position: relative;
   width: 100%;
   height: 200px;
   background-color: aqua;
-  text-align: center;
 }
 .content {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   width: 200px;
   height: 200px;
   background-color: blueviolet;
-  display: inline-block;
 }
 </style>
