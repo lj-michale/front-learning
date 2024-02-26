@@ -39,6 +39,7 @@
     "@vueuse/core": "^10.1.2",
     "@wangeditor/editor": "^5.1.23",
     "@wangeditor/editor-for-vue": "^5.1.12",
+    "ant-design-vue": "^4.0.0-rc.6",
     "axios": "^1.4.0",
     "dayjs": "^1.11.7",
     "driver.js": "^0.9.8",
