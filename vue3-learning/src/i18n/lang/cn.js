@@ -29,6 +29,7 @@ const cn = {
     provide_inject: 'provide_inject',
     pinia: 'pinia',
     slot: 'slot',
+    dataDasbroad: '数据大屏',
 
     vueSkill:'Vue知识',
     vueAttribute:'属性',

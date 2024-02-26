@@ -1,10 +1,10 @@
 <template>
   <div class="w">
-    <div class="col col1"></div>
-    <div class="col col2"></div>
-    <div class="col col3"></div>
-    <div class="col col4"></div>
-    <div class="col col5"></div>
+    <div class="col col1">啊啊啊啊啊啊啊啊啊啊啊啊</div>
+    <div class="col col2">啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</div>
+    <div class="col col3">啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</div>
+    <div class="col col4">啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</div>
+    <div class="col col5">啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</div>
   </div>
 </template>
 
@@ -13,10 +13,13 @@
 </script>
 
 <style scoped>
+.w {
+  display: table;
+  height: 200px;
+}
 .col {
-  float: left;
+  display: table-cell;
   width: 20%;
-  height: 300px;
 }
 .col1 {
   background-color: blue;

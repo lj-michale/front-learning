@@ -30,6 +30,7 @@ const en = {
     provide_inject: 'provide_inject',
     pinia: 'pinia',
     slot: 'slot',
+    dataDasbroad: 'dataDasbroad',
 
     vueSkill:'vueSkill',
     vueAttribute:'vueAttribute',

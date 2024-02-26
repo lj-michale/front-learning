@@ -11,6 +11,7 @@ import { createPinia } from 'pinia'
 import '@/router/permission'
 import permission from '@/directive/permission/button.js'
 import '../docs'
+import DataVVue3 from '@kjgl77/datav-vue3'
 
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
 
@@ -20,6 +21,7 @@ for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
 }
 
 app.use(createPinia())
+app.use(DataVVue3)
 app.use(i18n)
 app.use(ElementPlus) // 使用element-ui
 app.use(router)
