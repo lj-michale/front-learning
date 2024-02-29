@@ -11,6 +11,7 @@ const cn = {
     dataAsset: '数据资产',
     dataBi: '数据可视化',
     echartBi: 'EchartBI',
+    duoTuBiao: '多图表',
     dataV: 'DataV绘图',
 
     elementUi: 'ElementUI',

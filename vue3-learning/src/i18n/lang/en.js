@@ -12,6 +12,7 @@ const en = {
     dataAsset: 'dataAsset',
     dataBi: 'dataBi',
     echartBi: 'echartBi',
+    duoTuBiao: 'duoTuBiao',
     dataV: 'dataV',
 
     elementUi: 'elementUi',
