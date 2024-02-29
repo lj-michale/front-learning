@@ -25,10 +25,10 @@
       <div class="col col2" ref="chart7">
 
       </div>
-      <div class="col col3">
+      <div class="col col3" ref="chart8">>
 
       </div>
-      <div class="col col4">
+      <div class="col col4" ref="chart9">>
 
       </div>
       <div class="col col5">
@@ -80,6 +80,12 @@ let myChart6: echarts.ECharts;
 const chart7 = ref();
 let myChart7: echarts.ECharts;
 
+const chart8 = ref();
+let myChart8: echarts.ECharts;
+
+const chart9 = ref();
+let myChart9: echarts.ECharts;
+
 onMounted(() => {
   myChart = echarts.init(chart1.value);
   myChart.setOption(getChartSetOption());
@@ -95,6 +101,10 @@ onMounted(() => {
   myChart6.setOption(getChartSetOption6());
   myChart7 = echarts.init(chart7.value);
   myChart7.setOption(getChartSetOption7());
+  myChart8 = echarts.init(chart8.value);
+  myChart8.setOption(getChartSetOption8());
+  myChart9 = echarts.init(chart9.value);
+  myChart9.setOption(getChartSetOption9());
   window.addEventListener('resize', resizeHandler);
 });
 
@@ -1788,6 +1798,229 @@ function getChartSetOption7(){
   return option;
 }
 
+const colors = ['#5470C6', '#91CC75', '#EE6666'];
+function getChartSetOption8(){
+  type EChartsOption = echarts.EChartsOption;
+  var option: EChartsOption;
+  option = {
+    color: colors,
+    tooltip: {
+      trigger: 'axis',
+      axisPointer: {
+        type: 'cross'
+      }
+    },
+    grid: {
+      right: '20%'
+    },
+    toolbox: {
+      feature: {
+        dataView: { show: true, readOnly: false },
+        restore: { show: true },
+        saveAsImage: { show: true }
+      }
+    },
+    legend: {
+      data: ['Evaporation', 'Precipitation', 'Temperature']
+    },
+    xAxis: [
+      {
+        type: 'category',
+        axisTick: {
+          alignWithLabel: true
+        },
+        // prettier-ignore
+        data: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+      }
+    ],
+    yAxis: [
+      {
+        type: 'value',
+        name: 'Evaporation',
+        position: 'right',
+        alignTicks: true,
+        axisLine: {
+          show: true,
+          lineStyle: {
+            color: colors[0]
+          }
+        },
+        axisLabel: {
+          formatter: '{value} ml'
+        }
+      },
+      {
+        type: 'value',
+        name: 'Precipitation',
+        position: 'right',
+        alignTicks: true,
+        offset: 80,
+        axisLine: {
+          show: true,
+          lineStyle: {
+            color: colors[1]
+          }
+        },
+        axisLabel: {
+          formatter: '{value} ml'
+        }
+      },
+      {
+        type: 'value',
+        name: '温度',
+        position: 'left',
+        alignTicks: true,
+        axisLine: {
+          show: true,
+          lineStyle: {
+            color: colors[2]
+          }
+        },
+        axisLabel: {
+          formatter: '{value} °C'
+        }
+      }
+    ],
+    series: [
+      {
+        name: 'Evaporation',
+        type: 'bar',
+        data: [
+          2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3
+        ]
+      },
+      {
+        name: 'Precipitation',
+        type: 'bar',
+        yAxisIndex: 1,
+        data: [
+          2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3
+        ]
+      },
+      {
+        name: 'Temperature',
+        type: 'line',
+        yAxisIndex: 2,
+        data: [2.0, 2.2, 3.3, 4.5, 6.3, 10.2, 20.3, 23.4, 23.0, 16.5, 12.0, 6.2]
+      }
+    ]
+  };
+
+  return option;
+}
+
+const data9 = [
+  [5000, 10000, 6785.71],
+  [4000, 10000, 6825],
+  [3000, 6500, 4463.33],
+  [2500, 5600, 3793.83],
+  [2000, 4000, 3060],
+  [2000, 4000, 3222.33],
+  [2500, 4000, 3133.33],
+  [1800, 4000, 3100],
+  [2000, 3500, 2750],
+  [2000, 3000, 2500],
+  [1800, 3000, 2433.33],
+  [2000, 2700, 2375],
+  [1500, 2800, 2150],
+  [1500, 2300, 2100],
+  [1600, 3500, 2057.14],
+  [1500, 2600, 2037.5],
+  [1500, 2417.54, 1905.85],
+  [1500, 2000, 1775],
+  [1500, 1800, 1650]
+];
+// prettier-ignore
+const cities = ['北京', '上海', '深圳', '广州', '苏州', '杭州', '南京', '福州', '青岛', '济南', '长春', '大连', '温州', '郑州', '武汉', '成都', '东莞', '沈阳', '烟台'];
+const barHeight = 50;
+function getChartSetOption9(){
+  type EChartsOption = echarts.EChartsOption;
+  var option: EChartsOption;
+  option =  {
+    title: {
+      text: 'How expensive is it to rent an apartment in China?',
+      subtext: 'Data from https://www.numbeo.com'
+    },
+    legend: {
+      show: true,
+      top: 'bottom',
+      data: ['Range', 'Average']
+    },
+    grid: {
+      top: 100
+    },
+    angleAxis: {
+      type: 'category',
+      data: cities
+    },
+    tooltip: {
+      show: true,
+      formatter: function (params) {
+        const id = params.dataIndex;
+        return (
+          cities[id] +
+          '<br>Lowest：' +
+          data[id][0] +
+          '<br>Highest：' +
+          data[id][1] +
+          '<br>Average：' +
+          data[id][2]
+        );
+      }
+    },
+    radiusAxis: {},
+    polar: {},
+    series: [
+      {
+        type: 'bar',
+        itemStyle: {
+          color: 'transparent'
+        },
+        data: data9.map(function (d) {
+          return d[0];
+        }),
+        coordinateSystem: 'polar',
+        stack: 'Min Max',
+        silent: true
+      },
+      {
+        type: 'bar',
+        data: data9.map(function (d) {
+          return d[1] - d[0];
+        }),
+        coordinateSystem: 'polar',
+        name: 'Range',
+        stack: 'Min Max'
+      },
+      {
+        type: 'bar',
+        itemStyle: {
+          color: 'transparent'
+        },
+        data: data9.map(function (d) {
+          return d[2] - barHeight;
+        }),
+        coordinateSystem: 'polar',
+        stack: 'Average',
+        silent: true,
+        z: 10
+      },
+      {
+        type: 'bar',
+        data: data9.map(function (d) {
+          return barHeight * 2;
+        }),
+        coordinateSystem: 'polar',
+        name: 'Average',
+        stack: 'Average',
+        barGap: '-100%',
+        z: 10
+      }
+    ]
+  };
+
+  return option;
+}
 
 </script>
 
