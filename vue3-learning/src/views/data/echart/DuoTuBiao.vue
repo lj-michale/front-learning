@@ -2,7 +2,7 @@
   <b><p>echarts多图表展示</p></b>
   <div class="main">
     <div class="q-pa-sm1">
-      <div class="col col1">
+      <div class="col col1" ref="chart1">
 
       </div>
       <div class="col col2">
@@ -58,6 +58,49 @@
 <script lang="ts" setup>
 import * as echarts from 'echarts';
 import { ref,onMounted} from 'vue';
+
+const chart1 = ref();
+let myChart: echarts.ECharts;
+
+onMounted(() => {
+  myChart = echarts.init(chart1.value);
+  myChart.setOption(getChartSetOption());
+  window.addEventListener('resize', resizeHandler);
+});
+
+const resizeHandler = () => {
+  if (myChart) {
+    myChart.resize()
+  }
+}
+
+function getChartSetOption(){
+  type EChartsOption = echarts.EChartsOption;
+  var option: EChartsOption;
+  option = {
+    xAxis: {
+      type: 'category',
+      data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+    },
+    yAxis: {
+      type: 'value'
+    },
+    series: [
+      {
+        data: [120, 200, 150, 80, 70, 110, 130],
+        type: 'bar',
+        showBackground: true,
+        backgroundStyle: {
+          color: 'rgba(180, 180, 180, 0.2)'
+        }
+      }
+    ]
+  };
+
+  return option;
+}
+
+
 
 </script>
 
